@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3224EC812D45D069B000ECFC /* Pods_JewelCodeRemover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0988461257C0EBF96A640548 /* Pods_JewelCodeRemover.framework */; };
+		AC002DC620BBEC2300BF4787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC002DC520BBEC2300BF4787 /* AppDelegate.swift */; };
+		AC002DC820BBEC2300BF4787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC002DC720BBEC2300BF4787 /* ViewController.swift */; };
+		AC002DCA20BBEC2400BF4787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC002DC920BBEC2400BF4787 /* Assets.xcassets */; };
+		AC002DCD20BBEC2400BF4787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC002DCB20BBEC2400BF4787 /* Main.storyboard */; };
+		AC16E2CD20CBC9BF00917AB3 /* DetectCodeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC16E2CC20CBC9BF00917AB3 /* DetectCodeOperation.swift */; };
+		AC2CC14620CBFB730041CB11 /* KVOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2CC14520CBFB730041CB11 /* KVOperation.swift */; };
+		AC31CAE420D34C6800E1B8C3 /* Jewels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC31CAE320D34C6800E1B8C3 /* Jewels.swift */; };
+		AC356D2D20DD608100B3B29D /* Jewel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC356D2C20DD608100B3B29D /* Jewel.swift */; };
+		AC356D2F20DD64B700B3B29D /* AddCaptionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC356D2E20DD64B700B3B29D /* AddCaptionOperation.swift */; };
+		AC356D3120DD68FF00B3B29D /* NSImage+writeJPEG.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC356D3020DD68FF00B3B29D /* NSImage+writeJPEG.swift */; };
+		AC38242E20C23F1900766E98 /* CodeRemovalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38242D20C23F1900766E98 /* CodeRemovalService.swift */; };
+		AC38243020C28CD200766E98 /* ImageCaptionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38242F20C28CD200766E98 /* ImageCaptionDetector.swift */; };
+		AC417E3A20D2055E0070612F /* CaptionFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC417E3920D2055E0070612F /* CaptionFormat.swift */; };
+		AC44C58C20C63093004B7896 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44C58B20C63093004B7896 /* WindowController.swift */; };
+		AC44C58E20C632E6004B7896 /* NSOpenPanel+selectDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44C58D20C632E6004B7896 /* NSOpenPanel+selectDirectory.swift */; };
+		AC5D4F0C20CB74A500D8E8B1 /* ImportFolderOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D4F0B20CB74A500D8E8B1 /* ImportFolderOperation.swift */; };
+		AC634A0A20CBFFE600117728 /* RemoveCodeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC634A0920CBFFE600117728 /* RemoveCodeOperation.swift */; };
+		AC6EE2BB20C2D92700161E2E /* JewelTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6EE2BA20C2D92700161E2E /* JewelTableCellView.swift */; };
+		ACA64E3420D6923700C876CD /* ExportOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA64E3320D6923700C876CD /* ExportOperation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0988461257C0EBF96A640548 /* Pods_JewelCodeRemover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JewelCodeRemover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		811C7E34331392CBEBAB739D /* Pods-JewelCodeRemover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JewelCodeRemover.release.xcconfig"; path = "Pods/Target Support Files/Pods-JewelCodeRemover/Pods-JewelCodeRemover.release.xcconfig"; sourceTree = "<group>"; };
+		8A590A64034CE23C9EAB7199 /* Pods-JewelCodeRemover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JewelCodeRemover.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JewelCodeRemover/Pods-JewelCodeRemover.debug.xcconfig"; sourceTree = "<group>"; };
+		AC002DC220BBEC2300BF4787 /* JewelCodeRemover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JewelCodeRemover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC002DC520BBEC2300BF4787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC002DC720BBEC2300BF4787 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC002DC920BBEC2400BF4787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC002DCC20BBEC2400BF4787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC002DCE20BBEC2400BF4787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC002DCF20BBEC2400BF4787 /* JewelCodeRemover.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JewelCodeRemover.entitlements; sourceTree = "<group>"; };
+		AC16E2CC20CBC9BF00917AB3 /* DetectCodeOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectCodeOperation.swift; sourceTree = "<group>"; };
+		AC2CC14520CBFB730041CB11 /* KVOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVOperation.swift; sourceTree = "<group>"; };
+		AC31CAE320D34C6800E1B8C3 /* Jewels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jewels.swift; sourceTree = "<group>"; };
+		AC356D2C20DD608100B3B29D /* Jewel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jewel.swift; sourceTree = "<group>"; };
+		AC356D2E20DD64B700B3B29D /* AddCaptionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCaptionOperation.swift; sourceTree = "<group>"; };
+		AC356D3020DD68FF00B3B29D /* NSImage+writeJPEG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+writeJPEG.swift"; sourceTree = "<group>"; };
+		AC38242D20C23F1900766E98 /* CodeRemovalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRemovalService.swift; sourceTree = "<group>"; };
+		AC38242F20C28CD200766E98 /* ImageCaptionDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCaptionDetector.swift; sourceTree = "<group>"; };
+		AC417E3920D2055E0070612F /* CaptionFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionFormat.swift; sourceTree = "<group>"; };
+		AC44C58B20C63093004B7896 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		AC44C58D20C632E6004B7896 /* NSOpenPanel+selectDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSOpenPanel+selectDirectory.swift"; sourceTree = "<group>"; };
+		AC5D4F0B20CB74A500D8E8B1 /* ImportFolderOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportFolderOperation.swift; sourceTree = "<group>"; };
+		AC634A0920CBFFE600117728 /* RemoveCodeOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveCodeOperation.swift; sourceTree = "<group>"; };
+		AC6EE2BA20C2D92700161E2E /* JewelTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JewelTableCellView.swift; sourceTree = "<group>"; };
+		ACA64E3320D6923700C876CD /* ExportOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportOperation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC002DBF20BBEC2300BF4787 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3224EC812D45D069B000ECFC /* Pods_JewelCodeRemover.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AFD0030C5B056243581A8A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0988461257C0EBF96A640548 /* Pods_JewelCodeRemover.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BAC22F43152729EC90FC74F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A590A64034CE23C9EAB7199 /* Pods-JewelCodeRemover.debug.xcconfig */,
+				811C7E34331392CBEBAB739D /* Pods-JewelCodeRemover.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC002DB920BBEC2300BF4787 = {
+			isa = PBXGroup;
+			children = (
+				AC002DC420BBEC2300BF4787 /* JewelCodeRemover */,
+				AC002DC320BBEC2300BF4787 /* Products */,
+				8BAC22F43152729EC90FC74F /* Pods */,
+				5AFD0030C5B056243581A8A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC002DC320BBEC2300BF4787 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC002DC220BBEC2300BF4787 /* JewelCodeRemover.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC002DC420BBEC2300BF4787 /* JewelCodeRemover */ = {
+			isa = PBXGroup;
+			children = (
+				AC002DC520BBEC2300BF4787 /* AppDelegate.swift */,
+				AC002DC920BBEC2400BF4787 /* Assets.xcassets */,
+				AC002DCB20BBEC2400BF4787 /* Main.storyboard */,
+				AC002DCE20BBEC2400BF4787 /* Info.plist */,
+				AC002DCF20BBEC2400BF4787 /* JewelCodeRemover.entitlements */,
+				AC63763720DDEA2E001D1AD3 /* Services */,
+				AC356D2B20DD605600B3B29D /* Models */,
+				AC356D2A20DD601700B3B29D /* Views */,
+				AC31CAE520D4D79700E1B8C3 /* Operations */,
+				AC31CAE620D4D7BB00E1B8C3 /* Extensions */,
+			);
+			path = JewelCodeRemover;
+			sourceTree = "<group>";
+		};
+		AC31CAE520D4D79700E1B8C3 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				AC2CC14520CBFB730041CB11 /* KVOperation.swift */,
+				AC16E2CC20CBC9BF00917AB3 /* DetectCodeOperation.swift */,
+				AC5D4F0B20CB74A500D8E8B1 /* ImportFolderOperation.swift */,
+				AC634A0920CBFFE600117728 /* RemoveCodeOperation.swift */,
+				ACA64E3320D6923700C876CD /* ExportOperation.swift */,
+				AC356D2E20DD64B700B3B29D /* AddCaptionOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		AC31CAE620D4D7BB00E1B8C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC44C58D20C632E6004B7896 /* NSOpenPanel+selectDirectory.swift */,
+				AC356D3020DD68FF00B3B29D /* NSImage+writeJPEG.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC356D2A20DD601700B3B29D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC002DC720BBEC2300BF4787 /* ViewController.swift */,
+				AC6EE2BA20C2D92700161E2E /* JewelTableCellView.swift */,
+				AC44C58B20C63093004B7896 /* WindowController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC356D2B20DD605600B3B29D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC356D2C20DD608100B3B29D /* Jewel.swift */,
+				AC417E3920D2055E0070612F /* CaptionFormat.swift */,
+				AC31CAE320D34C6800E1B8C3 /* Jewels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC63763720DDEA2E001D1AD3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AC38242D20C23F1900766E98 /* CodeRemovalService.swift */,
+				AC38242F20C28CD200766E98 /* ImageCaptionDetector.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC002DC120BBEC2300BF4787 /* JewelCodeRemover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC002DD220BBEC2400BF4787 /* Build configuration list for PBXNativeTarget "JewelCodeRemover" */;
+			buildPhases = (
+				CCBE321565EFF79FA6CD3459 /* [CP] Check Pods Manifest.lock */,
+				AC002DBE20BBEC2300BF4787 /* Sources */,
+				AC002DBF20BBEC2300BF4787 /* Frameworks */,
+				AC002DC020BBEC2300BF4787 /* Resources */,
+				C916D6A91F6AFD766D1B5D15 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JewelCodeRemover;
+			productName = JewelCodeRemover;
+			productReference = AC002DC220BBEC2300BF4787 /* JewelCodeRemover.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC002DBA20BBEC2300BF4787 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Vikram Raj Gopinathan";
+				TargetAttributes = {
+					AC002DC120BBEC2300BF4787 = {
+						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = AC002DBD20BBEC2300BF4787 /* Build configuration list for PBXProject "JewelCodeRemover" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC002DB920BBEC2300BF4787;
+			productRefGroup = AC002DC320BBEC2300BF4787 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC002DC120BBEC2300BF4787 /* JewelCodeRemover */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC002DC020BBEC2300BF4787 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC002DCA20BBEC2400BF4787 /* Assets.xcassets in Resources */,
+				AC002DCD20BBEC2400BF4787 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C916D6A91F6AFD766D1B5D15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JewelCodeRemover/Pods-JewelCodeRemover-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JewelCodeRemover/Pods-JewelCodeRemover-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCBE321565EFF79FA6CD3459 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JewelCodeRemover-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC002DBE20BBEC2300BF4787 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC38243020C28CD200766E98 /* ImageCaptionDetector.swift in Sources */,
+				AC38242E20C23F1900766E98 /* CodeRemovalService.swift in Sources */,
+				AC634A0A20CBFFE600117728 /* RemoveCodeOperation.swift in Sources */,
+				ACA64E3420D6923700C876CD /* ExportOperation.swift in Sources */,
+				AC5D4F0C20CB74A500D8E8B1 /* ImportFolderOperation.swift in Sources */,
+				AC6EE2BB20C2D92700161E2E /* JewelTableCellView.swift in Sources */,
+				AC44C58C20C63093004B7896 /* WindowController.swift in Sources */,
+				AC002DC820BBEC2300BF4787 /* ViewController.swift in Sources */,
+				AC44C58E20C632E6004B7896 /* NSOpenPanel+selectDirectory.swift in Sources */,
+				AC2CC14620CBFB730041CB11 /* KVOperation.swift in Sources */,
+				AC002DC620BBEC2300BF4787 /* AppDelegate.swift in Sources */,
+				AC356D2F20DD64B700B3B29D /* AddCaptionOperation.swift in Sources */,
+				AC16E2CD20CBC9BF00917AB3 /* DetectCodeOperation.swift in Sources */,
+				AC356D2D20DD608100B3B29D /* Jewel.swift in Sources */,
+				AC31CAE420D34C6800E1B8C3 /* Jewels.swift in Sources */,
+				AC356D3120DD68FF00B3B29D /* NSImage+writeJPEG.swift in Sources */,
+				AC417E3A20D2055E0070612F /* CaptionFormat.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC002DCB20BBEC2400BF4787 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC002DCC20BBEC2400BF4787 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC002DD020BBEC2400BF4787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC002DD120BBEC2400BF4787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AC002DD320BBEC2400BF4787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A590A64034CE23C9EAB7199 /* Pods-JewelCodeRemover.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = JewelCodeRemover/JewelCodeRemover.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JewelCodeRemover",
+				);
+				INFOPLIST_FILE = JewelCodeRemover/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kivi.JewelCodeRemover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		AC002DD420BBEC2400BF4787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 811C7E34331392CBEBAB739D /* Pods-JewelCodeRemover.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = JewelCodeRemover/JewelCodeRemover.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JewelCodeRemover",
+				);
+				INFOPLIST_FILE = JewelCodeRemover/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kivi.JewelCodeRemover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC002DBD20BBEC2300BF4787 /* Build configuration list for PBXProject "JewelCodeRemover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC002DD020BBEC2400BF4787 /* Debug */,
+				AC002DD120BBEC2400BF4787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC002DD220BBEC2400BF4787 /* Build configuration list for PBXNativeTarget "JewelCodeRemover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC002DD320BBEC2400BF4787 /* Debug */,
+				AC002DD420BBEC2400BF4787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC002DBA20BBEC2300BF4787 /* Project object */;
+}
